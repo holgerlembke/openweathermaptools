@@ -49,6 +49,8 @@ The OpenweathermapProxy script (owms.php) offers two solution to tackle this cha
 
 ImageDecoder (imgdecode.php) converts a .png, .gif or .jpeg grafic into an uncompressed rgb-file. Files can be cached within the local SPIFFS file system.
 
+I can omit the image decoders now.
+
 ### Solution III
 
 The code snippets folder has some code snippets I use with both solution. You need to adapt it meets your demands.
