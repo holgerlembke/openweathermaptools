@@ -45,6 +45,8 @@ The OpenweathermapProxy script (owms.php) offers two solution to tackle this cha
 
 - alternatively it can create bite-sized text files that only contain what you need ready to read with a simple read-line algorithm that consums even less memory.
 
+I can omit JSON decoding and only need to download about 40 * 30 bytes.
+
 ### Solution II
 
 ImageDecoder (imgdecode.php) converts a .png, .gif or .jpeg grafic into an uncompressed rgb-file. Files can be cached within the local SPIFFS file system.
