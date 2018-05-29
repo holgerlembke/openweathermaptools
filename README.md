@@ -2,7 +2,7 @@
 
 ## Preface
 
-As most micro controllers the esp8266 has limited resources. My little i2c-weather-test toy (it is one of my test beds for my Arduino IoT/i2c training classes...) displays various in door sensor data and uses multiple communication methods to store and distribute the data. Currently it has the following hardware
+Like most micro controllers the esp8266 has limited resources. My little i2c-weather-test toy (it is one of my test beds for my Arduino IoT/i2c training classes...) displays various in door sensor data and uses multiple communication methods to store and distribute the data. Currently it has the following hardware
 
 - bme280 Bosch Temperature Humidity Pressure Sensor
 - bmp180 Bosch Temperature Pressure Sensor
@@ -55,7 +55,7 @@ I can omit the image decoders now.
 
 ### Solution III
 
-The code snippets folder has some code snippets I use with both solution. You need to adapt it meets your demands.
+The code snippets folder has some code snippets I use with both solution. You need to adapt it to meet your demands.
 
 You will see a lot of SerialUDP object usage, it offers pain free "serial monitoring" with ArduinoOTA via Microsoft PowerShell. See https://github.com/holgerlembke/serialtcp
 
