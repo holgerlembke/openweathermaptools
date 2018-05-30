@@ -11,7 +11,7 @@ Like most micro controllers the esp8266 has limited resources. My little i2c-wea
 - htu21d Measurement Specialties Humidity Sensor 
 - bh1750fvi ROHM Ambient Light Sensor 
 - TSL2561 AMS luminosity sensor 
-- MH-Z19 winsen-sensor CO2 sensor, connected with a arduino nano i2c slave
+- MH-Z19 winsen-sensor CO2 sensor, connected with a arduino pro mini i2c slave
 - ds3231 maxim integrated real time clock
 - ILI9341 display 320x240 (SPI)
 - lcd 2004 with PCF8574 i2c connector and PCA9685 led dimming
@@ -19,7 +19,7 @@ Like most micro controllers the esp8266 has limited resources. My little i2c-wea
 
 The software side uses a web server creating a dynamic website with SVG and ajax, mqtt, sddp, OTA, SPIFFS and all the other bells and whistles. In my idle loop I have less than 30k free heap. 
 
-For weather forecast display I use https://openweathermap.org/. It is stable, reliable and free.
+For weather forecast display I use https://openweathermap.org/. It is stable, reliable and has a free plan.
 
 ## Problem
 
@@ -39,7 +39,7 @@ OpenweathermapProxy and ImageDecoder can
 
 ### Solution I
 
-The OpenweathermapProxy script (owms.php) offers two solution to tackle this challenge:
+The OpenweathermapProxy script (owms.php) offers two solution to tackle the memory challenge:
 
 - it can split the JSON into 40 small JSONs with about 1k size each, ArduinoJson is happy with 800 bytes now.
 
